@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky ; 
+    top: 0;
+    cursor: pointer;
+}
+.nav-list{
+    width: 50%;
+    /* background-color: black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-list li a{
+    text-decoration: none;
+    color: white;
+}
+.nav-list li{
+    list-style: none;
+    padding: 23px;
+}
+.nav-list li a:hover{
+    color: grey;
+}
+.rightnav{
+    text-align: right;
+    width: 50%;
+    /* background-color:black; */
+    padding: 0 23px;
+}
+.logo{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+}
+.logo img{
+    margin-left: 0px;
+    width: 40%;
+    border: 4px solid white ; 
+    border-radius: 55px;
+}
+#Search{
+    padding: 5px;
+    font-size: 17px;
+}
+.background{
+    background: rgba(0,0, 0,0.7) url('../img/city3.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+    
+}
+.firstSection{
+    height: 100vh;
+
+}
+.box-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    max-width: 50%;
+    margin: auto;
+    height: 70%;
+    /* padding-top: 30px; */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.firstHalf{    
+width: 80%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+.secondHalf{    
+    width: 30%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+.secondHalf img{    
+    width: 70%;
+    padding-top: 2px;
+    border: 4px solid white;
+    border-radius: 100%;
+    display: block;
+    margin: auto;
+}
+.text-big{
+    font-size: 40px;
+
+}
+.text-small{
+    font-size: 20px;
+}
+.btn{
+    padding: 8px 20px;
+    margin: 7px 3px ;
+    border: 2px solid white;
+    border-radius: 10px;
+    background: none;
+    color: white;
+    cursor: pointer;
+}
+.btn-sm{
+    padding: 6px  10 px; 
+    vertical-align: middle;
+    font-size: 16px;
+}
+.secRight{
+    /* height: 400px; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 80%;
+    margin: auto;
+    font-family: 'Ubuntu', sans-serif;
+    /* background-color: rgb(212, 212, 226); */
+}
+.section-left{
+    padding-bottom: 30px;
+    /* height: 400px; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 80%;
+    margin: auto;
+    flex-direction: row-reverse;
+    font-family: 'Ubuntu', sans-serif;
+    /* background-color: rgb(212, 212, 226); */
+}
+.paras{
+    padding: 50px;
+}
+.thumbnil{
+    border: 2px solid black;
+    border-radius: 26px;
+    /* padding-top: 3px; */
+}
+.contact{
+    background-color: rgb(247, 247, 250);
+    height: 120vh;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 35px;
+}
+.text-center{
+    text-align: center;
+    padding-top: 20px;
+}
+.form{
+    max-width: 390px;
+    margin:   auto;
+}
+.form input{
+    margin: 14px 0;
+    width: 100%;
+    font-size: 17px;
+    border: 2px solid gray;
+    border-radius: 6px;
+    padding: 5px 3px;
+}
+.btn-dark{
+    color: black;
+    border:2px solid rgb(85, 84, 84);
+}
+.text-footter{
+    text-align: center;
+    padding-top: 50px;
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+.txta{
+    height: 50px;
+    width: 400px;
+
+}
+.background-f{
+    /* height: 30px; */
+    background-color:  rgba(0,0, 0,0.7);
+    /* display: flex;
+    position: sticky;
+    bottom: 0; */
+}
+.burger{
+    position: absolute;
+    cursor: pointer;
+    right: 0%;
+    /* top: 15px;  */
+    display: none;
+}
+.section{
+    padding: 30px;
+}
+.line{
+    width: 33px;
+    background-color: white;
+    height: 4px;
+    margin: 5px 5px;
+}
+@media only screen and (max-width: 1000px){
+    .nav-list{
+        flex-direction: column;
+    }
+    .navbar{
+        flex-direction: column;
+        transition: all 0.3s ease-out;
+        height: 410px;
+    }
+    .rightnav{
+        text-align: center
+    }
+    #Search{
+        width: 100%;
+    }
+    .h-nav-resp{
+        height: 60px;
+    }
+    .v-class-resp{
+        opacity: 0;
+    }
+    .burger{
+        display: block;
+    }
+    .box-main{
+        flex-direction: column-reverse;
+        max-width: 100%;
+    }
+    .section{
+        flex-direction: column-reverse;
+    }
+    .paras{
+        padding: 0px;
+    }
+    
+}
+
