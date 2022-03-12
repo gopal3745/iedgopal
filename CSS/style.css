@@ -109,8 +109,8 @@ justify-content: center;
     color: white;
     cursor: pointer;
 }
-.buttons:hover{
-    background-color: blue ; 
+.butttons:hover {
+  background-color: yellow;
 }
 .btn-sm{
     padding: 6px  10 px; 
