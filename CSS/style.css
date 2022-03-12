@@ -109,6 +109,9 @@ justify-content: center;
     color: white;
     cursor: pointer;
 }
+.btn:hover{
+    background-color: blue ; 
+}
 .btn-sm{
     padding: 6px  10 px; 
     vertical-align: middle;
